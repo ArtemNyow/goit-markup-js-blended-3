@@ -1,17 +1,8 @@
-// Отримуйте від користувача число (кількість хвилин) через prompt
-// і виводьте у консоль рядок у форматі годин та хвилин.
-// Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
-// Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
+// Дано масив чисел [2, 4, 6, 8, 10]. 
+// Перевірте, чи є кожен елемент масиву парним. Очікуваний результат: true.
 
-const input = Number(prompt("Введіть кількість хвилин"));
-let hours = Math.floor(input / 60);
-const minutes = input % 60;
-if (hours < 10) {
-    hours = "0" + hours;
-}
-if (minutes < 10) {
-    minutes = "0" + minutes;
-}
-console.log(hours+":"+minutes)
+// const numbers = [2, 4, 6, 8, 10];
+const numbers = [2, 4, 6, 8, 10];
 
+const allEven = numbers.every(num => num % 2 === 0)
+console.log(allEven);

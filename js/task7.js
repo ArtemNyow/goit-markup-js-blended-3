@@ -1,19 +1,10 @@
-// Напишіть функцію getNumbers(min, max), що приймає 2 параметри - 
-// мінімальне і максимальне число відповідно.
-// Напишіть цикл всередині функції, який виводить у консоль
-// всі числа від max до min за спаданням.
-// Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
-// і поверніть її з функції.
-function getNumbers(min, max) {
-    let sum = 0;
-    for (let i=max; i >= min; i--) {
-        console.log(i);
-        
-        if (i % 2 === 0) {
-            sum += i;
-        }
-    }
-    return sum;
-}
-const result = getNumbers(1, 10);
-console.log("Сума парних числе:"+result);
+// Відсортуйте масив рядків ["banana", "orange", "apple", "pear"]
+//  у порядку алфавіту. 
+// Очікуваний результат: ["apple", "banana", "orange", "pear"].
+
+// const stringArray = ['banana', 'orange', 'apple', 'pear'];
+
+const stringArray = ['banana', 'orange', 'apple', 'pear'];
+
+const sortArray = stringArray.sort();
+console.log(sortArray);

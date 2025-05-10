@@ -1,29 +1,17 @@
-// Змінна num може набувати 4 значення: '1', '2', '3' або '4' 
-// (запитуй це значення у користувача через prompt). 
-// Якщо вона має значення '1', то у змінну result запишіть 'зима',
-// якщо має значення '2' - 'весна' і так далі.
-// Розв'яжіть завдання через switch-case.
-// Не забудьте про дефолтне значення, на випадок, якщо користувач 
-// введе в prompt щось інше. В такому випадку result має набувати значення:
-// "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
-// Значення змінної result виведіть в консоль.
-const number = prompt("Введіть число від 1 до 4");
-let result;
-switch (Number(number)) {
-    case 1:
-        result = "Зима";
-        break;
-    case 2:
-        result = "Весна";
-        break;
-    case 3:
-        result = "Літо";
-        break;
-    case 4:
-        result = "Осінь";
-        break;
-    default:
-        result = "Вибачте, але ви маєте ввести значення від 1 до 4 включно";
-        break;
-}
-console.log(result);
+// Дано масив об'єктів. 
+// Перевірте, чи є хоча б один об'єкт з віком менше 20 років. 
+// Очікуваний результат: true.
+
+// const people = [
+//  { name: 'John', age: 27 },
+//  { name: 'Jane', age: 31 },
+//  { name: 'Bob', age: 19 },
+// ];
+const people = [
+ { name: 'John', age: 27 },
+ { name: 'Jane', age: 31 },
+ { name: 'Bob', age: 19 },
+];
+
+const findPeople = people.some(person => person.age < 20)
+console.log(findPeople)
